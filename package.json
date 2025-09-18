@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node discord-webhook-handler.js",
     "dev": "nodemon discord-webhook-handler.js",
-    "calendar-sync": "node calendar-sync.js"
+    "calendar-sync": "node calendar-sync.js",
+    "discord-export": "node discord-export-archive.js",
+    "export-all": "npm run discord-export && powershell -File scripts/Export-ChatGPT.ps1"
   },
   "dependencies": {
     "express": "^4.18.2",
